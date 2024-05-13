@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>WEB1 - WEB</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1><a href="index.html">PV=nRT</a></h1>
+        <input id="night_day" type="button" value="night" onclick="
+       var target = document.querySelector('body')
+       var alist = document.querySelectorAll('a');
+    
+        if (this.value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value = 'day';
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = 'powderblue';
+                console.log(alist[i]);
+                i = i+1
+            }
+        }else{ 
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = 'night';
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = 'blue';
+                console.log(alist[i]);
+                i = i+1
+            }
+        }
+        ">
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">page.entrance</a></li>
+                <li><a href="2.html">page.python</a></li>
+            </ol>
+            <div id="article">
+            <h2>page.python</h2>
+            <p>어쨋든 유도한 방정식을 python을 통해 구현해봤어요.
+                작년에 여러분도 많이 본 그거에용.<br>
+                <a href="기체 방정식.py">코드</a>
+                그냥 방정식을 구현해 버린 거죠 뭐 별 거 없습니다.
+            </p>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>WEB1 - WEB</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1><a href="index.html">PV=nRT</a></h1>
+        <input id="night_day" type="button" value="night" onclick="
+       var target = document.querySelector('body')
+       var alist = document.querySelectorAll('a');
+    
+        if (this.value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value = 'day';
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = 'powderblue';
+                console.log(alist[i]);
+                i = i+1
+            }
+        }else{ 
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = 'night';
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = 'blue';
+                console.log(alist[i]);
+                i = i+1
+            }
+        }
+        ">
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">page.entrance</a></li>
+                <li><a href="2.html">page.python</a></li>
+            </ol>
+            <div id="article">
+            <h2>이상기체 상태 방정식의 유도</h2>
+            <p>마우스로 일일히 드래그하여 이상기체 상태 방정식을 유도하게 만들고 싶었으나
+            발표가 하루 뒤로 잡혀버려 시간상 이유로 영상을 가져왔습니다.</p>
+            웹페이지에 영상 첨부하는 거 이거 굉장히 뭐 진짜 일반적인 웹페이지같고 멋있다고 생각합니다.
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uKGwR7JQyrU?si=Rc5cbXBVJTxfTbFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            영상을 하나 더 찍었습니다.
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HcMgEvOpjgE?si=nzjg5_XQhQe2zPn6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </body>
+</html>

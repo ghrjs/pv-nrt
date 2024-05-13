@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>30917-송호건</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1><a href="index.html">PV=nRT</a></h1>
+        <input id="night_day" type="button" value="night" onclick="
+       var target = document.querySelector('body')
+       var alist = document.querySelectorAll('a');
+    
+        if (this.value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value = 'day';
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = 'powderblue';
+                console.log(alist[i]);
+                i = i+1
+            }
+        }else{ 
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = 'night';
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = 'blue';
+                console.log(alist[i]);
+                i = i+1
+            }
+        }
+        ">
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">page.entrance</a></li>
+                <li><a href="2.html">page.python</a></li>
+            </ol>
+            <div id="article">
+            <h2>30917 송호건</h2>
+            <p>안녕하세요. 벼락치기로 웹페이지 만들고있는 송호건입니다.</p> <br>
+            <p>이 웹페이지는 <strong>PV=nRT</strong>, 이상기체 상태방정식을 다룰겁니다.</p>
+            <p>다 아는 내용이시겠지만 잘 봐주세요.</p>
+            </div>
+        </div>
+    </body>
+</html>
