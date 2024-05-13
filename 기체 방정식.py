@@ -40,3 +40,5 @@ elif a == "T":
 
 else:
     print("잘못 입력하셨습니다.")
+
+a=input("축하합니다.")
